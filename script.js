@@ -10,10 +10,7 @@ form.addEventListener("submit", function (e) {
   const age = ageInput.value.trim();
 
   // Validation: ensure inputs are not empty
-  if (!name || !age) {
-    alert("Please enter valid details.");
-    return;
-  }
+  
 
   // Promise to check voting eligibility
   const checkEligibility = new Promise((resolve, reject) => {
